@@ -1,0 +1,7 @@
+.flex-container {
+  display: flex;
+  height: 150px;
+  /*flex-wrap: wrap;*/
+  align-content: space-around;
+}
+
