@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8" />
-	<title>Nom provisoire</title>
+	<title>Emre Sener G4S1</title>
 	
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -33,7 +33,7 @@
 					<li><a href="panier.html">Mon panier</a></li>
 					<li class="recherche"><input type="text" placeholder="Rechercher"></li>
 				</ul>
-			</div><!--/.nav-collapse -->
+			</div>
 		</div>
 	</nav>
 	
@@ -41,42 +41,82 @@
 	
 	<!-- content: start -->
 	<div class="container body-content">
+		<div class="hidden-sm hidden-md hidden-lg index-promotion">
+			<h3 class="index-titre"> Jusqu'à -20% sur ces articles</h3>
+			<a href="article.html"><img src="Images/Aston-Martin-DB9.jpg" alt="Aston-Martin-DB9"></a>
+			<a href="article.html"><img src="Images/Bentley-Continental-GT.jpg" alt="Bentley-Continental-GT"></a>
+			<a href="article.html"><img src="Images/Marussia-B2.jpg" alt="Marussia-B2"></a>
+		</div>
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<h3 class="titre">Bienvenue, voici nos promotions du moment :</h3>
-				<!-- <p>Faire un truc qui défile</p> -->
-			</div>
-		</div>
-		<h3 class="titre">Notre catalogue :</h3>
-		<div class="row index-catalogue">
-			<!-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> -->
-				<div>
-					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-						<a href="article.html"><img class="index-image" src="Images/Voiture-de-luxe.jpg" alt="LUXE"/></a>
-						<a href="article.html"><h4 class="index-categorie">Luxe</h4></a>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-						<a href="article.html"><img class="index-image" src="Images/Muscle-car.jpg" alt="MUSCLE-CAR"/></a>
-						<a href="article.html"><h4 class="index-categorie">Muscle Car</h4></a>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-						<a href="article.html"><img class="index-image" src="Images/Hybride.jpg" alt="HYBRIDE"/></a>
-						<a href="article.html"><h4 class="index-categorie">Hybride</h4></a>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-						<a href="article.html"><img class="index-image" src="Images/SUV.jpg" alt="SUV"/></a>
-						<a href="article.html"><h4 class="index-categorie">SUV</h4></a>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-						<a href="article.html"><img class="index-image" src="Images/Supercar.jpg" alt="SUPERCAR"/></a>
-						<a href="article.html"><h4 class="index-categorie">Supercar</h4></a>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-						<a href="article.html"><img class="index-image" src="Images/Old-school.jpg" alt="OLD-SCHOOL"/></a>
-						<a href="article.html"><h4 class="index-categorie">Old-School</h4></a>
+				<h3 class="index-titre hidden-xs">Jusqu'à -20% sur ces articles</h3>
+				<!-- Carousel: start -->
+				
+				<!-- source: https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-carousel.php -->
+				
+				<div class="bs-example hidden-xs">
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<!-- Carousel indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+						</ol>   
+						<!-- Wrapper for carousel items -->
+						<div class="carousel-inner">
+							<div class="item active">
+								<a href="article.html"><img src="Images/Aston-Martin-DB9.jpg" alt="Aston-Martin-DB9"></a>
+							</div>
+							<div class="item">
+								<a href="article.html"><img src="Images/Bentley-Continental-GT.jpg" alt="Bentley-Continental-GT"></a>
+							</div>
+							<div class="item">
+								<a href="article.html"><img src="Images/Marussia-B2.jpg" alt="Marussia-B2"></a>
+							</div>
+						</div>
+						<!-- Carousel controls -->
+						<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						</a>
+						<a class="carousel-control right" href="#myCarousel" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
 					</div>
 				</div>
-			<!-- </div> -->
+				
+				<!-- Carousel: end -->
+				
+			</div>
+		</div>
+		
+		<h3 class="index-titre">Notre catalogue</h3>
+		<div class="row index-catalogue">
+			<div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 test">
+					<a href="article.html"><img class="index-image" src="Images/Voiture-de-luxe.jpg" alt="LUXE"/></a>
+					<a href="article.html"><h4 class="index-categorie">Luxe</h4></a>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a href="article.html"><img class="index-image" src="Images/Muscle-car.jpg" alt="MUSCLE-CAR"/></a>
+					<a href="article.html"><h4 class="index-categorie">Muscle Car</h4></a>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a href="article.html"><img class="index-image" src="Images/Hybride.jpg" alt="HYBRIDE"/></a>
+					<a href="article.html"><h4 class="index-categorie">Hybride</h4></a>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a href="article.html"><img class="index-image" src="Images/SUV.jpg" alt="SUV"/></a>
+					<a href="article.html"><h4 class="index-categorie">SUV</h4></a>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a href="article.html"><img class="index-image" src="Images/Supercar.jpg" alt="SUPERCAR"/></a>
+					<a href="article.html"><h4 class="index-categorie">Supercar</h4></a>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a href="article.html"><img class="index-image" src="Images/Old-school.jpg" alt="OLD-SCHOOL"/></a>
+					<a href="article.html"><h4 class="index-categorie">Old-School</h4></a>
+				</div>
+			</div>
 		</div>
 	</div>
 	<!-- content: end -->

@@ -25,11 +25,6 @@ body{
 	background-color: #FFFFFF;
 }
 
-.titre{
-	color: goldenrod;
-	text-decoration: underline;
-}
-
 form{
 	margin-bottom: 20px;
 }
@@ -65,7 +60,7 @@ form{
 	margin-bottom: 25px;
 	float: left;
 	margin-left: 15px;
-	max-width: 75%;
+	max-width: 60%;
 }
 
 .article-categorie{
@@ -98,10 +93,11 @@ form{
 }
 
 .article-panier{
-	width: 30px;
 	float: right;
-	margin-top: 20px;
+	margin-top: 16px;
 	margin-right: 15px;
+	border: 1px solid lightgrey;
+	color: goldenrod;
 }
 
 /* ------ index ------ */
@@ -110,6 +106,11 @@ form{
 	width: 200px;
 	border: 2px solid goldenrod;
 	border-radius: 5%;
+}
+
+.index-titre{
+	color: goldenrod;
+	text-decoration: underline;
 }
 
 .index-catalogue{
@@ -125,13 +126,35 @@ form{
 
 .index-categorie{
 	color: goldenrod;
-	/* text-decoration: none; */
+	background-color: rgba(0,0,0,0.8);
 }
 
-/* bandeau de promotion (accueil)*/
-/* Les liens qui sont soulignés en bleu (article)*/
-/* La longueur des liens (article)*/
-/* Le bug sm (article)*/
+/* carousel */
+.carousel{
+    background: #2f4357;
+    margin-top: 20px;
+}
+.carousel .item{
+    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+	max-height: 350px;
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+}
+.bs-example{
+	margin: 20px;
+}
+
+.index-promotion img{
+	width: 200px;
+	margin-bottom: 5px;
+}
+
+.index-promotion{
+	text-align: center;
+	border-bottom: 1px solid lightgrey;
+	padding-bottom: 5px;
+}
 
 /* ------ Panier ------ */
 
@@ -149,9 +172,68 @@ form{
 
 .panier-detail th, .panier-detail td{
 	border: 1px solid lightgrey;
+	padding-left: 2px;
 }
 
 .panier-liste{
 	margin-left: 2%;
-	margin-right: 2%:
+	margin-right: 2%;
+}
+
+.panier-quantite{
+	width: 30px;
+	border: 1px solid lightgrey;
+}
+
+.panier-page{
+	padding-top: 11px;
+}
+
+.panier-titre{
+	color: goldenrod;
+	text-decoration: underline;
+	margin-bottom: 17px;
+	margin-top: 2px;
+}
+
+.panier-commande{
+	color: goldenrod;
+	border: solid 1px lightgrey;
+	margin-bottom: 10px;
+}
+
+/* ------ Confirmation Commande ------ */
+
+.confirmation-commande-titre{
+	color: goldenrod;
+	text-decoration: underline;
+}
+
+.confirmation-commande-informations{
+	margin-left: 5px;
+}
+
+.confirmation-commande-informations th{
+	width: 100px;
+}
+
+.confirmation-commande-informations td{
+	padding-bottom: 1px;
+	padding-top: 1px;
+}
+
+.confirmation-commande-bouton{
+	margin-top: 10px;
+	margin-left: 7px;
+	display: flex;
+	justify-content: space-around;
+	width: 240px;
+}
+
+/* ------ Commande Validé ------ */
+
+.commande-valide-bouton{
+	border: 1px solid lightgrey;
+	color: goldenrod;
+	margin-bottom: 10px;
 }

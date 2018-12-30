@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8" />
+	<title>Emre Sener G4S1</title>
+	
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- header: start -->
+	
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+						aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="/index.html">
+					<img class="img-responsive logo" src="Images/logo.png" alt="ES">
+				</a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="panier.html">Mon panier</a></li>
+					<li class="recherche"><input type="text" placeholder="Rechercher"></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<!-- header: end -->
+	
+	<!-- content: start -->
+	<div class="container body-content">
+		<h3 class="confirmation-commande-titre">Veuillez entrer vos informations</h3>
+		<table class="confirmation-commande-informations">
+			<tr>
+				<th>Nom :</th>
+				<td><input type="text" value=""></td>
+			</tr>
+			<tr>
+				<th>Prénom :</th>
+				<td><input type="text" value=""></td>
+			</tr>
+			<tr>
+				<th>Téléphone :</th>
+				<td><input type="text" value=""></td>
+			</tr>
+			<tr>
+				<th>Email :</th>
+				<td><input type="text" value=""></td>
+			</tr>
+			<tr>
+				<th>Pays :</th>
+				<td><input type="text" value=""></td>
+			</tr>
+			<tr>
+				<th>Ville :</th>
+				<td><input type="text" value=""></td>
+			</tr>
+			<tr>
+				<th>Adresse :</th>
+				<td><input type="text" value=""></td>
+			</tr>
+		</table>
+		<div class="confirmation-commande-bouton">
+			<form action="panier.html">
+				<input type="submit" class="btn btn-secondary" value="Annuler"/>
+			</form>
+			<form action="commande-valide.html">
+				<input type="submit" class="btn btn-primary" value="Valider la commande"/>
+			</form>
+		</div>
+	</div>
+	<!-- content: end -->
+	
+	<!-- footer: start -->
+	<footer>
+	</footer>
+	<!-- footer: end -->
+</body>
+</html>
